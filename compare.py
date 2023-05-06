@@ -48,7 +48,7 @@ if os.path.isfile(latest_file):
         if last_main_content == main_content:
             print("The current version is the same as the last saved version.")
         else:
-            print("The current version is different from the last saved version.")
+            print(f"The current version is different from the last saved version. Saving {currentfile}.")
             # save the current version
             with open(currentfile, "w", encoding="utf-8") as f:
                 f.write(main_content)
